@@ -1,0 +1,27 @@
+{
+  "name": "clickup-timeline-visualizer",
+  "version": "1.0.0",
+  "description": "Interactive timeline visualization tool for ClickUp tasks",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "clickup",
+    "timeline",
+    "visualization",
+    "project-management",
+    "d3js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
